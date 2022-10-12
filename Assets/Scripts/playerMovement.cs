@@ -23,10 +23,10 @@ public class playerMovement : MonoBehaviour
         //flip the player when they change direction
         if (horizontalInput > 0.1f)
         {
-            transform.localScale = new Vector3(2,2,2);
+            transform.localScale = new Vector3(1,1,1);
         } else if (horizontalInput < -0.1f)
         {
-            transform.localScale = new Vector3(-2, 2, 2);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         if (Input.GetKey(KeyCode.Space) && grounded)
         {

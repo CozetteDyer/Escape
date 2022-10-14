@@ -8,8 +8,11 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Uu]serSettings/
+/[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
+
+# Recordings can get excessive in size
+/[Rr]ecordings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -54,9 +57,14 @@ sysinfo.txt
 
 # Builds
 *.apk
+*.aab
 *.unitypackage
+*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 UserSettings/EditorUserSettings.asset

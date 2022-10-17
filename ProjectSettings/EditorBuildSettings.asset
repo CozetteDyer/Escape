@@ -16,5 +16,14 @@ EditorBuildSettings:
     guid: a3849e18760a0724985057950a3422e3
   - enabled: 1
     path: Assets/Scenes/1st room.unity
-    guid: 686d2136c741a88449425b11e788eedc
+    guid: 8b5635b985571a9499bd04ad5a5378e0
+  - enabled: 1
+    path: Assets/Scenes/2nd room.unity
+    guid: a6a55992e6293b54dac89119334e7f81
+  - enabled: 1
+    path: Assets/Scenes/3rd room.unity
+    guid: dc92538f4476cb3409a8c7de0da75624
+  - enabled: 1
+    path: Assets/Scenes/death Scene.unity
+    guid: af040fefbcc372747b91cb89361acc90
   m_configObjects: {}

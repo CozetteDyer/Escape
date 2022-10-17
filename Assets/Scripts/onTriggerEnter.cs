@@ -12,5 +12,15 @@ public class onTriggerEnter : MonoBehaviour
         {
             SceneManager.LoadScene("2nd room");
         }
+
+ 	if (collision.CompareTag("doorTest"))
+        {
+            SceneManager.LoadScene("3rd room");
+        }
+
+	if (collision.CompareTag("barrelTest"))
+        {
+            SceneManager.LoadScene("1st room");
+        }
     }
 }

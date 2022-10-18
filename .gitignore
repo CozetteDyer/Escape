@@ -60,3 +60,31 @@ sysinfo.txt
 crashlytics-build.properties
 
 UserSettings/EditorUserSettings.asset
+*.zip
+*.info
+*.config
+escape_project1/Escape_Data/globalgamemanagers
+*.assets
+escape_project1/Escape_Data/level0
+*.resS
+escape_project1/Escape_Data/level1
+escape_project1/Escape_Data/level2
+escape_project1/Escape_Data/level3
+escape_project1/Escape_Data/level4
+Escape.exe
+*.dll
+escape_project1/Escape_Data/Resources/unity default resources
+escape_project1/Escape_Data/Resources/unity_builtin_extra
+*.json
+*.browser
+*.aspx
+*.map
+*.ini
+escape_project1/MonoBleedingEdge/etc/mono/config
+*.xml
+*.asset
+*.exe
+*.asset
+*.asset
+*.asset
+ProjectSettings/EditorBuildSettings.asset

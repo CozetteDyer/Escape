@@ -8,6 +8,7 @@ TagManager:
   - Door
   - doorTest
   - barrelTest
+  - ladder
   layers:
   - Default
   - TransparentFX

@@ -524,7 +524,7 @@ TextureImporter:
         width: 93
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -545,7 +545,7 @@ TextureImporter:
         width: 77
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,7 +566,7 @@ TextureImporter:
         width: 114
         height: 137
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 2, w: 0}
       outline: []
       physicsShape: []
@@ -574,6 +574,48 @@ TextureImporter:
       bones: []
       spriteID: f3175f503686c1d408f6aa64c84ecdd7
       internalID: -1913413796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e390552246303dc4fbdd830abadb34f2
+      internalID: 2041484682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_23
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 32
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd8e330706f63548bf682adf13fd353
+      internalID: -2015742256
       vertices: []
       indices: 
       edges: []
@@ -595,6 +637,7 @@ TextureImporter:
       Castle2_21: -1913413796
       Castle2_10: -1143788313
       Castle2_13: 2133149772
+      Castle2_23: -2015742256
       Castle2_0: -1365917550
       Castle2_6: 1920611847
       Castle2_19: -972317000
@@ -608,6 +651,7 @@ TextureImporter:
       Castle2_20: -1147869509
       Castle2_1: 1169360530
       Castle2_3: -1588320713
+      Castle2_22: 2041484682
       Castle2_16: -844912144
       Castle2_5: -1631201680
       Castle2_17: 1690355453

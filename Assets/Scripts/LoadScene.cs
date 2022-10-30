@@ -52,4 +52,12 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene("Options Scene");
     }
+
+    /**
+     * Loads Credits Scene
+     */
+    public void loadCreditsScene()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }

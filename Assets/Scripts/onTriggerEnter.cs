@@ -22,5 +22,11 @@ public class onTriggerEnter : MonoBehaviour
         {
             SceneManager.LoadScene("1st room");
         }
+
+	if (collision.CompareTag("villain"))
+        {
+	    Debug.Log ("toggle");
+        }
+
     }
 }

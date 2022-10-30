@@ -8,6 +8,9 @@ TagManager:
   - Door
   - doorTest
   - barrelTest
+  - target
+  - wall
+  - projectile
   layers:
   - Default
   - TransparentFX

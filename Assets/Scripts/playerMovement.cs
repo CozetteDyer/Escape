@@ -8,6 +8,10 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
+    private bool isAttack;
+
+    public ProjectileBehavior ProjectilePrefab;
+    public Transform LaunchOffset;
 
     private void Awake()
     {
@@ -32,11 +36,25 @@ public class playerMovement : MonoBehaviour
         {
             Jump();
         }
+        if (Input.GetMouseButtonDown(1)) // right click
+        {
+            isAttack = true;
+            anim.SetTrigger("isAttack");
+            var projectile = Instantiate(ProjectilePrefab, LaunchOffset.position, gameObject.transform.rotation);
+            
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            isAttack = false;
+            anim.SetTrigger("isAttack");
+        }
+
 
 
         //set animator parameters
         anim.SetBool("running", horizontalInput !=0);
         anim.SetBool("grounded", grounded);
+        anim.SetBool("isAttack", isAttack);
     }
 
     private void Jump()

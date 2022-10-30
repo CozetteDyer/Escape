@@ -8,8 +8,8 @@ TagManager:
   - Door
   - doorTest
   - barrelTest
-  - ladder
   - villain
+  - Ladder
   layers:
   - Default
   - TransparentFX

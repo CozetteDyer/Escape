@@ -18,9 +18,9 @@ public class onTriggerEnter : MonoBehaviour
             SceneManager.LoadScene("3rd room");
         }
 
-	if (collision.CompareTag("barrelTest"))
+	if (collision.CompareTag("villain"))
         {
-            SceneManager.LoadScene("1st room");
+            SceneManager.LoadScene("triviaGame");
         }
     }
 }

@@ -9,6 +9,7 @@ public class musicController : MonoBehaviour
     public Toggle muteToggle;
     public GameObject ObjectMusic;
     public bool mute;
+    public int muteInt;
 
 
     private float MusicVolume = 0f;
@@ -23,8 +24,8 @@ public class musicController : MonoBehaviour
         MusicVolume = PlayerPrefs.GetFloat("volume");
         AudioSource.volume = MusicVolume;
         volumeSlider.value = MusicVolume;
-       
-        if (mute == true)
+        muteInt = PlayerPrefs.GetInt("mute");
+        if (muteInt == 1)
         {
             muteToggle.isOn = true;
         }
@@ -43,9 +44,11 @@ public class musicController : MonoBehaviour
         {
             AudioSource.volume = MusicVolume;
             PlayerPrefs.SetFloat("volume", MusicVolume);
+            PlayerPrefs.SetInt("mute", 0);
         } else
         {
             AudioSource.volume = 0f;
+            PlayerPrefs.SetInt("mute", 1);
         }
         
         

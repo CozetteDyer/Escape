@@ -37,7 +37,8 @@ private void Awake()
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        if (Input.GetKey(KeyCode.Space) && grounded &! isClimbing)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) 
+            && grounded &! isClimbing)
         {
             Jump();
         }

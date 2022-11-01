@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;  
 using UnityEngine;
-//using UnityEngine.UI; 
+using UnityEngine.UI; 
 using TMPro;
 
 public class QuizManager : MonoBehaviour
@@ -25,6 +25,23 @@ public class QuizManager : MonoBehaviour
         generateQuestion();
     }
 
+    void generateQuestion()
+    {
+        if(QnA.Count > 0)
+        {
+            currentQuestion = Random.Range(0, QnA.Count); // 5 questions for now
+
+            questionText.text = QnA[currentQuestion].Question;
+            setAnswers();
+        }
+        else
+        {
+            Debug.Log("oops, out of questions");
+            gameOver();
+        }
+    }
+
+    
     void gameOver()
     {
         QuizPanel.SetActive(false);
@@ -33,14 +50,15 @@ public class QuizManager : MonoBehaviour
 
     public void correct()
     {
+        qCorrect += 1;
+   
         if (qCorrect == 3)
         {
             QuizPanel.SetActive(false);
             GoPanel.SetActive(false);
             WPanel.SetActive(true);
         }
-
-        qCorrect += 1;
+             
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
     }
@@ -57,9 +75,9 @@ public class QuizManager : MonoBehaviour
         for(int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<AnswersScript>().isCorrect = false; 
-            options[i].transform.GetChild(0).GetComponent<TextMesh>().text = QnA[currentQuestion].Answers[i];
+            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[currentQuestion].Answers[i];
 
-            if(QnA[currentQuestion].correctAnswer == i+1)
+            if(QnA[currentQuestion].correctAnswer == i)
             {
                 options[i].GetComponent<AnswersScript>().isCorrect = true; 
             }
@@ -68,19 +86,4 @@ public class QuizManager : MonoBehaviour
 
     }
 
-    void generateQuestion()
-    {
-        if(QnA.Count > 0)
-        {
-            currentQuestion = Random.Range(0, QnA.Count); // 5 questions for now
-
-            questionText.text = QnA[currentQuestion].Question;
-            setAnswers();
-        }
-        else
-        {
-            Debug.Log("oops, out of questions");
-            gameOver();
-        }
-    }
 }

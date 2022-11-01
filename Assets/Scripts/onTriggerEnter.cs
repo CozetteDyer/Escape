@@ -13,14 +13,20 @@ public class onTriggerEnter : MonoBehaviour
             SceneManager.LoadScene("2nd room");
         }
 
- 	if (collision.CompareTag("doorTest"))
+ 	    if (collision.CompareTag("doorTest"))
         {
             SceneManager.LoadScene("3rd room");
         }
 
-	if (collision.CompareTag("villain"))
+	    if (collision.CompareTag("villain"))
         {
             SceneManager.LoadScene("triviaGame");
         }
+    
+        if (collision.CompareTag("deathBoundary"))
+        {
+            SceneManager.LoadScene("death Scene");
+        }
     }
+
 }

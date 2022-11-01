@@ -11,6 +11,8 @@ TagManager:
   - target
   - wall
   - projectile
+  - Ladder
+  - villain
   layers:
   - Default
   - TransparentFX

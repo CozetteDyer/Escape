@@ -13,7 +13,11 @@ public class playerMovement : MonoBehaviour
     public ProjectileBehavior ProjectilePrefab;
     public Transform LaunchOffset;
 
-    private void Awake()
+    private bool isLadder;
+    private bool isClimbing;
+    private float verticalInput;
+
+private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -22,6 +26,7 @@ public class playerMovement : MonoBehaviour
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         //flip the player when they change direction
@@ -32,7 +37,7 @@ public class playerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
-        if (Input.GetKey(KeyCode.Space) && grounded)
+        if (Input.GetKey(KeyCode.Space) && grounded &! isClimbing)
         {
             Jump();
         }
@@ -50,6 +55,11 @@ public class playerMovement : MonoBehaviour
         }
 
 
+        //ladder logic
+        if (isLadder && Mathf.Abs(verticalInput) > 0f)
+        {
+            isClimbing = true;
+        }
 
         //set animator parameters
         anim.SetBool("running", horizontalInput !=0);
@@ -69,6 +79,35 @@ public class playerMovement : MonoBehaviour
         if(collision.gameObject.tag == "Ground")
         {
             grounded = true;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Ladder")
+        {
+            isLadder = true;
+            grounded = false;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Ladder")
+        {
+            isLadder = false;
+            isClimbing = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (isClimbing == true)
+        {
+            body.gravityScale = 0f;
+            body.velocity = new Vector2(body.velocity.x, verticalInput * speed);
+        }
+        else
+        {
+            body.gravityScale = 3f;
         }
     }
 }

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Screen.unity
     guid: 47c2d59abf46de7449a0c87f034fb8a3
   - enabled: 0
-    path: Assets/Scenes/Exit Scene.unity
+    path: 
     guid: 239889f97fb2f314caf8d778289ea7c3
   - enabled: 1
     path: Assets/Scenes/Options Scene.unity
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/death Scene.unity
     guid: af040fefbcc372747b91cb89361acc90
+  - enabled: 1
+    path: Assets/Scenes/triviaGame.unity
+    guid: 130f14c614bbe2b49a21e442fcca7ae0
   m_configObjects: {}

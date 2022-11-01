@@ -13,6 +13,7 @@ TagManager:
   - projectile
   - Ladder
   - villain
+  - gameMusic
   layers:
   - Default
   - TransparentFX

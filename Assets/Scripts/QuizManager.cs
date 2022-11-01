@@ -17,6 +17,7 @@ public class QuizManager : MonoBehaviour
 
 
 	public TMP_Text questionText;
+    public TMP_Text[] Answers;
 
     private void Start()
     {
@@ -54,12 +55,14 @@ public class QuizManager : MonoBehaviour
     
     void setAnswers()
     {
-        for(int i = 0; i < options.Length; i++)
+
+        for (int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<AnswersScript>().isCorrect = false; 
             options[i].transform.GetChild(0).GetComponent<TextMesh>().text = QnA[currentQuestion].Answers[i];
+            Answers[i].text = QnA[currentQuestion].Answers[i];
 
-            if(QnA[currentQuestion].correctAnswer == i+1)
+            if (QnA[currentQuestion].correctAnswer == i+1)
             {
                 options[i].GetComponent<AnswersScript>().isCorrect = true; 
             }

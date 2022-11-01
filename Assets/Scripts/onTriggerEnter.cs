@@ -17,15 +17,15 @@ public class onTriggerEnter : MonoBehaviour
         {
             SceneManager.LoadScene("3rd room");
         }
-
-	    if (collision.CompareTag("villain"))
-        {
-            SceneManager.LoadScene("triviaGame");
-        }
     
         if (collision.CompareTag("deathBoundary"))
         {
             SceneManager.LoadScene("death Scene");
+        }
+        
+        if (collision.CompareTag("end"))
+        {
+            SceneManager.LoadScene("Win Scene");
         }
     }
 

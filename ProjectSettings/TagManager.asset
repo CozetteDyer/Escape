@@ -15,6 +15,7 @@ TagManager:
   - villain
   - gameMusic
   - deathBoundary
+  - end
   layers:
   - Default
   - TransparentFX

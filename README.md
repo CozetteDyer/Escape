@@ -18,12 +18,12 @@ To Win:
     
 Puzzle Hints:
   - It is recommended to try the game before looking at the hints:
-  .
-  .
-  .
-  .
-  .
-  .
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
   - Puzzle Room 1:
       1. You start locked in a small area with a piller blocking your progression. There is something you need to do to remove the piller
           - What object stands out?
@@ -33,32 +33,24 @@ Puzzle Hints:
           - Hint 2: Look at your surrounding through the game? Do you notice anything?
           - Hint 3: The answer is spelled out in the environment.
   - Puzzle Room 2:
-      1. You encounter a trivia Question. Texas is respectful to all forms of objects.
-
-
-
-
-Puzzle Answers found below
-  - It is recommended to try the game before looking at the answers:
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
-  .
+      1. You encounter a 5 trivia Questions. You must answer three correctly to win. 
+          - Texas is respectful to all forms of objects.
+          - Georgia isn't a chilcken, they use their hands to eat. 
+          - These Pipelines Are Really Awesome Like Little Efficient Lines. 
+          - The answer lies in memory.
+          - The answer is  6.241509074×10^18 electrons of charge.
+  .<br/>
+  .<br/>
+  .<br/>
+  
+Having trouble? Puzzle solutions are below:<br/>
+   - It is recommended to try the game before looking at the answers:
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
+  .<br/>
   - Answers:
     - Puzzle Room 1:
       1. You start locked in a small area with a piller blocking your progression. There is something you need to do to remove the piller
@@ -74,4 +66,12 @@ Puzzle Answers found below
   - Puzzle Room 2:
       1. You encounter a trivia Question. Texas is respectful to all forms of objects.
         - Answer: corpse
+      2. Georgia isn't a chilcken, they use their hands to eat. 
+        - Answer: Fried Chicken
+      3. These Pipelines Are Really Awesome Like Little Efficient Lines. 
+        - perform PARALLEL processing
+      4. The answer lies in memory.
+        - memory-mapped I/O
+      5. The answer is  6.241509074×10^18 electrons of charge.
+        - Ampere
         

@@ -64,14 +64,14 @@ Having trouble? Puzzle solutions are below:<br/>
           - Hint 3: The answer is spelled out in the environment.
             - Answer: Use the buttons that start out all showing 'A' to display the word 'EXIT.' 
   - Puzzle Room 2:
-      1. You encounter a trivia Question. Texas is respectful to all forms of objects.
+      1. You encounter a trivia Question. Texas is respectful to all forms of objects.<br/>
         - Answer: corpse
-      2. Georgia isn't a chilcken, they use their hands to eat. 
+      2. Georgia isn't a chilcken, they use their hands to eat.<br/> 
         - Answer: Fried Chicken
-      3. These Pipelines Are Really Awesome Like Little Efficient Lines. 
-        - perform PARALLEL processing
-      4. The answer lies in memory.
-        - memory-mapped I/O
-      5. The answer is  6.241509074×10^18 electrons of charge.
-        - Ampere
+      3. These Pipelines Are Really Awesome Like Little Efficient Lines.<br/> 
+        - Answer: Perform PARALLEL processing
+      4. The answer lies in memory.<br/>
+        - Answer: Memory-mapped I/O
+      5. The answer is  6.241509074×10^18 electrons of charge.<br/>
+        - Answer: Ampere
         

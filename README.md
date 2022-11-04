@@ -5,6 +5,11 @@ Controls:
   - Move: Left & Right arrow keys OR 'A' Key & 'D' Key to move Left and Right accordingly
   - Jump: Up Arrow OR 'W' Key OR Space Bar
   - Fire: Right Click
+
+Known Errors:
+  - You can get stuck on the edges of platforms and walls. 
+  - Congratulations is spelled wrong
+  - On the second puzzle room there is a space between platforms that does not let the character fall through to die, but acts as a platform of empty space instead
   
  
 To Win:

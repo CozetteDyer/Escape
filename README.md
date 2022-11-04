@@ -10,6 +10,7 @@ Known Errors:
   - You can get stuck on the edges of platforms and walls. 
   - Congratulations is spelled wrong
   - On the second puzzle room there is a space between platforms that does not let the character fall through to die, but acts as a platform of empty space instead
+  - Trivia does not pop up the second time you run through it
   
  
 To Win:

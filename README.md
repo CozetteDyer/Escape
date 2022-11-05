@@ -12,6 +12,9 @@ Known Errors:
   - On the second puzzle room there is a space between platforms that does not let the character fall through to die, but acts as a platform of empty space instead
   - Trivia does not pop up the second time you run through it
   - Trivia does not stop player from continuing on the map.
+  - The ladder in room 3 has unnatural physics behaviour, including acceleration and no logic for ground and ladder tags simultaneously.
+  - The games audio must be manually triggered from the options room, but is fully operational afterwards.
+  - A few UI elements need repositioning/straightening. 
   
  
 To Win:
